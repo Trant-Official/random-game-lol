@@ -1,2 +1,40 @@
-- name: Steam - Deploy
-uses: game-ci/steam-deploy@v3.0.0
+            - name: Steam - Deploy
+  # You may pin to the exact commit or the version.
+  # uses: game-ci/steam-deploy@26412a2c1ab0397207af1ecb1a85682f2a0ceea3
+  uses: game-ci/steam-deploy@v3.0.0
+  with:
+    # The username of your builder account.
+    username: # default is 
+    # The TOTP to use for login. If set, `configVdf`, `ssfnFileName`, and `ssfnFileContents` will be ignored.
+    totp: # optional
+    # The contents of STEAM_HOME/config/config.vdf. Required if `totp` is not set.
+    configVdf: # optional
+    # The app id within steam partner network.
+    appId: # default is 
+    # An optional override to specify the ID of the first depot instead of using the app ID plus one.
+    firstDepotIdOverride: # optional
+    # Description for this build.
+    buildDescription: # optional
+    # The root path to your builds. This is the base of which depots will search your files.
+    rootPath: # optional
+    # The path to depot1.
+    depot1Path: # optional
+    # The path to depot2.
+    depot2Path: # optional
+    # The path to depot3.
+    depot3Path: # optional
+    # The path to depot4.
+    depot4Path: # optional
+    # The path to depot5.
+    depot5Path: # optional
+    # The path to depot6.
+    depot6Path: # optional
+    # The path to depot7.
+    depot7Path: # optional
+    # The path to depot8.
+    depot8Path: # optional
+    # The path to depot9.
+    depot9Path: # optional
+    # The branch within steam that this build will be automatically put live on.
+    releaseBranch: # optional
+          
